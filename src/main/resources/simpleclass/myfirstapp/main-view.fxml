@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="496.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleclass.myfirstapp.Controller">
+    <children>
+        <AnchorPane fx:id="Controller" layoutY="67.0" prefHeight="313.0" prefWidth="498.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Button fx:id="createObject" layoutX="328.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#OnCreate" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #2E3348;" text="Создать" textFill="WHITE" />
+                <TextField fx:id="name" layoutX="22.0" layoutY="23.0" prefHeight="26.0" prefWidth="186.0" text="Приказ о зачислении" />
+                <TextField fx:id="author" layoutX="21.0" layoutY="89.0" prefHeight="26.0" prefWidth="186.0" text="Иванов И. И." />
+                <TextField fx:id="pages" layoutX="21.0" layoutY="157.0" prefHeight="26.0" prefWidth="186.0" text="10" />
+                <TextField fx:id="type" layoutX="20.0" layoutY="220.0" prefHeight="26.0" prefWidth="186.0" promptText="Тип документа" text="Приказ" />
+                <TextArea fx:id="text_field" layoutX="240.0" layoutY="20.0" prefHeight="162.0" prefWidth="227.0" />
+            <Label fx:id="status_name" layoutX="27.0" layoutY="49.0" prefHeight="18.0" prefWidth="150.0" textFill="#5e5e5e">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="status_author" layoutX="27.0" layoutY="115.0" prefHeight="18.0" prefWidth="150.0" textFill="#5e5e5e">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="status_pages" layoutX="27.0" layoutY="183.0" prefHeight="18.0" prefWidth="150.0" textFill="#5e5e5e">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="status_type" layoutX="27.0" layoutY="246.0" prefHeight="18.0" prefWidth="150.0" textFill="#5e5e5e">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="20.0" layoutY="5.0" prefHeight="18.0" prefWidth="66.0" text="Название" />
+            <Label layoutX="21.0" layoutY="71.0" prefHeight="18.0" prefWidth="46.0" text="Автор" />
+            <Label layoutX="23.0" layoutY="139.0" prefHeight="18.0" prefWidth="65.0" text="Страницы" />
+            <Label layoutX="20.0" layoutY="203.0" prefHeight="18.0" prefWidth="95.0" text="Тип документа" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="21.0" layoutY="22.0" text="Simple class: Text documents" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
