@@ -9,6 +9,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.image.Image;
 //Stage представляет пользовательский интерфейс
 import java.io.IOException;
 
@@ -36,6 +37,10 @@ public class Main extends Application {
         Scene scene = new Scene((Parent)fxmlLoader.load(), 500.0, 380.0);
         stage.setTitle("Simple class"); // Заголовок
         stage.setScene(scene); //  устанавливает сцену (объект Scene) для объекта Stage
+        stage.setResizable(false); // запретить изменение размера окна
+        // подключение иконки окна
+        Image applicationIcon = new Image(getClass().getResourceAsStream("/image/icon.png"));
+        stage.getIcons().add(applicationIcon);
         stage.show(); // отображает окно
     }
 

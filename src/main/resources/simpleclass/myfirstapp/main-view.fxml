@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="496.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleclass.myfirstapp.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="360.0" prefWidth="496.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleclass.myfirstapp.Controller">
     <children>
-        <AnchorPane fx:id="Controller" layoutY="67.0" prefHeight="313.0" prefWidth="498.0" style="-fx-background-color: #fafafa;">
+        <AnchorPane fx:id="Controller" layoutY="67.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="289.0" prefWidth="496.0" style="-fx-background-color: #fafafa;" AnchorPane.bottomAnchor="20.19999999999999" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="67.0">
             <children>
-                <Button fx:id="createObject" layoutX="328.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#OnCreate" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #2E3348;" text="Создать" textFill="WHITE" />
-                <TextField fx:id="name" layoutX="22.0" layoutY="23.0" prefHeight="26.0" prefWidth="186.0" text="Приказ о зачислении" />
-                <TextField fx:id="author" layoutX="21.0" layoutY="89.0" prefHeight="26.0" prefWidth="186.0" text="Иванов И. И." />
-                <TextField fx:id="pages" layoutX="21.0" layoutY="157.0" prefHeight="26.0" prefWidth="186.0" text="10" />
-                <TextField fx:id="type" layoutX="20.0" layoutY="220.0" prefHeight="26.0" prefWidth="186.0" promptText="Тип документа" text="Приказ" />
-                <TextArea fx:id="text_field" layoutX="240.0" layoutY="20.0" prefHeight="162.0" prefWidth="227.0" />
+                <Button fx:id="createObject" layoutX="328.0" layoutY="219.0" mnemonicParsing="false" onMouseClicked="#OnCreate" prefHeight="26.0" prefWidth="138.0" style="-fx-background-color: #2E3348;" text="Создать" textFill="WHITE" AnchorPane.bottomAnchor="43.6" AnchorPane.leftAnchor="328.0" AnchorPane.rightAnchor="29.599999999999994" AnchorPane.topAnchor="219.0" />
+                <TextField fx:id="name" layoutX="22.0" layoutY="23.0" prefHeight="26.0" prefWidth="186.0" text="Приказ о зачислении" AnchorPane.bottomAnchor="239.6" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="287.6" AnchorPane.topAnchor="23.0" />
+                <TextField fx:id="author" layoutX="21.0" layoutY="89.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="186.0" text="Иванов И. И." AnchorPane.bottomAnchor="173.6" AnchorPane.leftAnchor="20.99999999999997" AnchorPane.rightAnchor="288.6" AnchorPane.topAnchor="89.0" />
+                <TextField fx:id="pages" layoutX="21.0" layoutY="157.0" prefHeight="26.0" prefWidth="186.0" text="10" AnchorPane.bottomAnchor="105.6" AnchorPane.leftAnchor="20.99999999999997" AnchorPane.rightAnchor="288.6" AnchorPane.topAnchor="157.0" />
+                <TextField fx:id="type" layoutX="20.0" layoutY="220.0" prefHeight="26.0" prefWidth="186.0" promptText="Тип документа" text="Приказ" AnchorPane.bottomAnchor="42.6" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="289.6" AnchorPane.topAnchor="220.0" />
+                <TextArea fx:id="text_field" disable="true" layoutX="240.0" layoutY="20.0" prefHeight="162.0" prefWidth="227.0" AnchorPane.bottomAnchor="106.6" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="28.80000000000001" AnchorPane.topAnchor="20.0" />
             <Label fx:id="status_name" layoutX="27.0" layoutY="49.0" prefHeight="18.0" prefWidth="150.0" textFill="#5e5e5e">
                <font>
                   <Font size="10.0" />
@@ -37,13 +37,13 @@
                   <Font size="10.0" />
                </font>
             </Label>
-            <Label layoutX="20.0" layoutY="5.0" prefHeight="18.0" prefWidth="66.0" text="Название" />
-            <Label layoutX="21.0" layoutY="71.0" prefHeight="18.0" prefWidth="46.0" text="Автор" />
-            <Label layoutX="23.0" layoutY="139.0" prefHeight="18.0" prefWidth="65.0" text="Страницы" />
-            <Label layoutX="20.0" layoutY="203.0" prefHeight="18.0" prefWidth="95.0" text="Тип документа" />
+            <Label layoutX="20.0" layoutY="5.0" prefHeight="18.0" prefWidth="66.0" text="Название" AnchorPane.bottomAnchor="265.6" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="409.6" AnchorPane.topAnchor="5.0" />
+            <Label layoutX="21.0" layoutY="71.0" prefHeight="18.0" prefWidth="46.0" text="Автор" AnchorPane.bottomAnchor="199.6" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="428.6" AnchorPane.topAnchor="71.0" />
+            <Label layoutX="23.0" layoutY="139.0" prefHeight="18.0" prefWidth="65.0" text="Страницы" AnchorPane.bottomAnchor="131.6" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="409.4" AnchorPane.topAnchor="139.0" />
+            <Label layoutX="20.0" layoutY="203.0" prefHeight="18.0" prefWidth="95.0" text="Тип документа" AnchorPane.bottomAnchor="67.6" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="380.8" AnchorPane.topAnchor="203.0" />
             </children>
         </AnchorPane>
-        <Label layoutX="21.0" layoutY="22.0" text="Simple class: Text documents" textFill="WHITE">
+        <Label layoutX="21.0" layoutY="22.0" text="Simple class: Text documents" textFill="WHITE" AnchorPane.bottomAnchor="323.8" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="22.0">
             <font>
                 <Font name="Century Gothic" size="24.0" />
             </font>
