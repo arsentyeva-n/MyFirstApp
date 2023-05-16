@@ -15,6 +15,12 @@ import java.io.IOException;
 
 public class Main extends Application {
     /** Создание главного окна приложения */
+
+    /**
+     * Родительский метод переопределён в наследнике.
+     * Компилятор при наличии такой аннотации проверяет,
+     * не нарушены ли правила переопределения
+     */
     @Override
     public void start(Stage stage) throws IOException {
         // Создание корневого элемента сцены по его описанию из fxml файла

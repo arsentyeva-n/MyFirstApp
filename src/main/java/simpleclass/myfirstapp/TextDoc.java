@@ -21,12 +21,12 @@ class TextDoc {
     }
 
     // Конструктор с параметрами
-    TextDoc(String name1, String author1, String type1, int pages1) {
+/*    TextDoc(String name1, String author1, String type1, int pages1) {
         set_name(name1);
         set_author(author1);
         set_pages(pages1);
         set_type(type1);
-    }
+    }*/
 
     // Функция принимает имя
     void set_name(String name1){
@@ -60,6 +60,6 @@ class TextDoc {
     int get_pages(){ return pages; }
 
     // Метод вывода информации в консоли
-    String displayInfo(){
+    public String toString(){
         return "Name: " + name + "\nAuthor: " + author + "\nType: " + type + "\nPages: " + Integer.toString(pages); }
 }

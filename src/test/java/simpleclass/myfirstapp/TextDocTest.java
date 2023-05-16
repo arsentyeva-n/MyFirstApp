@@ -72,6 +72,6 @@ class TextDocTest {
         g.set_pages(2);
         g.set_type("Доверенность");
         String s = "Name: " + g.get_name() + "\nAuthor: " + g.get_author() + "\nType: " + g.get_type() + "\nPages: " + Integer.toString(g.get_pages());
-        Assertions.assertEquals(s, g.displayInfo());
+        Assertions.assertEquals(s, g.toString());
     }
 }

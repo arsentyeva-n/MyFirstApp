@@ -4,44 +4,38 @@
 
 package simpleclass.myfirstapp;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.fxml.FXML; // определяет функционал для работы с FXML
 // Визуальные компоненты
 // Scene - это контейнер верхнего уровня для всех графических элементов
 import javafx.scene.control.Label;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.AnchorPane;
 
 
 // В файле fxml с помощью атрибута fx:controller в корневом узле устанавливается класс
 // контроллера который должен использоваться, то есть в данном случае Controller
 // xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleclass.myfirstapp.Controller"
+//  класс, предназначенный для непосредственной обработки запросов от клиента и возвращения результатов
 public class Controller {
+    
+    //  final на полях, говорит о том, что данное поле, является окончательным, что его нельзя изменить
     final String color_error = "#ffc3bf";
-    TextDoc Obj_1 = new TextDoc();
-     // Создание объекта
+
+    /**
+     * переменная myTextDoc является ссылкой на созданный объект, а не самим объектом.
+     * В Java все объекты создаются динамически,
+     * а переменные могут содержать только ссылки на объекты, а не сами объекты.
+     * myTextDoc является ссылкой на объект типа TextDoc
+     * */
+
+
+    TextDoc myTextDoc = new TextDoc();
+    
+
     // @FXML позволяет сопоставить переменные и методы в контроллере с сущностями в FXML
     @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
-
-    @FXML
-    private AnchorPane Controller;
-
-    @FXML
     private TextField author;
-
-    @FXML
-    private Button createObject;
-
-    @FXML
-    private Button inputList;
 
     @FXML
     private TextField name;
@@ -78,14 +72,14 @@ public class Controller {
             type.setStyle("-fx-control-inner-background: #ffffff");
 
             // Задание полей при вводе пустого поля
-            Obj_1.set_name(name.getText());
-            Obj_1.set_author(author.getText());
+            myTextDoc.set_name(name.getText());
+            myTextDoc.set_author(author.getText());
             if (pages.getText().equals("")) throw new IllegalArgumentException("the pages is undefined");
-            Obj_1.set_pages(Integer.parseInt(pages.getText()));
-            Obj_1.set_type(type.getText());
+            myTextDoc.set_pages(Integer.parseInt(pages.getText()));
+            myTextDoc.set_type(type.getText());
 
             // Вывод значений класса на экран
-            text_field.setText(Obj_1.displayInfo());
+            text_field.setText(myTextDoc.toString());
         } catch (IllegalArgumentException e) {
             // При схватывании исключения выводится сообщение этого исключения и поле окрасывается в красный цвет
             if (e.getMessage() == "the name is undefined") {
