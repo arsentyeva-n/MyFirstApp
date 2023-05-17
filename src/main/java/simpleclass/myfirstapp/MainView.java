@@ -14,10 +14,10 @@ import javafx.scene.input.MouseEvent;
 
 
 // В файле fxml с помощью атрибута fx:controller в корневом узле устанавливается класс
-// контроллера который должен использоваться, то есть в данном случае Controller
-// xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleclass.myfirstapp.Controller"
+// контроллера который должен использоваться, то есть в данном случае MainView
+// xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleclass.myfirstapp.MainView
 //  класс, предназначенный для непосредственной обработки запросов от клиента и возвращения результатов
-public class Controller {
+public class MainView {
     
     //  final на полях, говорит о том, что данное поле, является окончательным, что его нельзя изменить
     final String color_error = "#ffc3bf";
@@ -28,8 +28,6 @@ public class Controller {
      * а переменные могут содержать только ссылки на объекты, а не сами объекты.
      * myTextDoc является ссылкой на объект типа TextDoc
      * */
-
-
     TextDoc myTextDoc = new TextDoc();
     
 
